@@ -29,12 +29,12 @@
 
         header {
             height: 100%;
-            min-height: 400px;
+            min-height: 600px;
             /*background-image: url(images/fundo.jpg);
             background-repeat: no-repeat;
             background-position: center bottom;
             background-size: cover;*/
-            padding-top: 200px;
+            padding-top: 50px;
             text-align: center;
             box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
         }
@@ -72,17 +72,160 @@
 			box-shadow: 0px 2px 15px rgba(0,0,0,0.4);
 			border-radius: 4px;
 			padding: 20px;
-			margin: 0px 0px 30px;
+			margin: 0px 0px 10px;
 		}
+				
+		.sidenav {
+		height: 100%; 
+		width: 0; 
+		position: fixed; 
+		z-index: 1; 
+		top: 0; 
+		left: 0;
+		background-color: rgb(63, 60, 60); 
+		overflow-x: hidden; 
+		padding-top: 60px; 
+		transition: 0.5s; 
+		}
+
 		
+		.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+		}
+
+		
+		.sidenav a:hover {
+		color: #f1f1f1;
+		}
+
+		
+		.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+		}
+		.nav{
+			background-color: black;
+			padding: 2%;
+			
+		}
+		.container {
+		position: relative;
+		width: 100%;
+		height: 500px;
+		background-color: black;
+		
+		}
+
+		.image {
+		display: block;
+		width: 100%;
+		height: auto;
+		}
+
+		.overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgb(240, 204, 137);
+		opacity: 20%;
+		overflow: hidden;
+		width: 100%;
+		height: 0;
+		transition: .5s ease;
+
+		}
+
+		.container:hover .overlay {
+		height: 100%;
+
+		}
+
+		.text {
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+		}
+		.c1{
+			background-image: url(images/exemplo.jpg);
+		}
     </style>
 
 </head>
-<body>
+<body> 
+	<nav class="nav">
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+		  </div>
+		  
+		  
+		  <span onclick="openNav()"> 
+			Menu
+		</span>
+	
+</nav>
 
-    <header data-parallax="scroll" data-image-src="images/fundo.jpg">
+	<header data-parallax="scroll" data-image-src="images/">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3">
 
-        <h1>Produtora de filmes!!!</h1>
+        <div class="container c1">
+			
+			<div class="overlay">
+			  <div class="text">Info</div>
+			</div>
+		  </div>
+				</div>
+		 
+				<div class="col-sm-3">
+		  <div class="container c1">
+		
+			<div class="overlay">
+			  <div class="text">Info</div>
+			</div>
+		  </div>
+				</div>
+
+				<div class="col-sm-3">
+		 
+		  <div class="container c1">
+			
+			<div class="overlay">
+			  <div class="text">Info</div>
+			</div>
+		  </div>
+				</div>
+
+				<div class="col-sm-3">
+		 
+		  <div class="container c1">
+			
+			<div class="overlay">
+			  <div class="text">Info</div>
+			</div>
+		  </div>
+		  </div>
+		  </div>
+		  </div>
 
     </header>
 
@@ -197,6 +340,17 @@
 	<script type="text/javascript" src="lib/wow/js/wow-1.3.0.min.js"></script>
 	<script type="text/javascript">
 		new WOW().init();
+	</script>
+	<script type="text/javascript">
+			/* Set the width of the side navigation to 250px */
+		function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		/* Set the width of the side navigation to 0 */
+		function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		}
 	</script>
 
 </body>
