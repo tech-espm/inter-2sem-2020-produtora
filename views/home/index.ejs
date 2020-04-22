@@ -1,354 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Produtora</title>
 
-	<title>Produtora</title>
-
-	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-1.0.22.min.css" />
-	<!--
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-1.0.22.min.css" />
+		<!--
 	Animate.css
 	https://daneden.github.io/animate.css/
 	-->
-	<link rel="stylesheet" href="lib/animate/css/animate-3.7.2.css" />
-    <link rel="stylesheet" href="css/style.css" />
-
-    <style type="text/css">
-
-        html, body {
-            min-height: 100%;
-            height: 100%;
-        }
-
-        body {
-            background: white;
-        }
-
-        header {
-            height: 100%;
-            min-height: 600px;
-            /*background-image: url(images/fundo.jpg);
-            background-repeat: no-repeat;
-            background-position: center bottom;
-            background-size: cover;*/
-            padding-top: 50px;
-            text-align: center;
-            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
-        }
-
-        #secaoA {
-            padding: 100px 15px;
-        }
-
-        #secaoB {
-            padding: 150px 0px 100px;
-			background-color: #3c455c;
-			background-position: top left;
-			background-repeat: no-repeat;
-			background-size: 100%;
-        }
-
-        footer {
-            padding: 150px 15px 100px;
-			background-color: black;
-			background-position: top left;
-			background-repeat: no-repeat;
-			background-size: 100%;
-			color: #999999;
-		}
-
-		.conteudo {
-			margin: 0px auto;
-			max-width: 1200px;
-		}
-
-		.footer {
-			max-width: 500px;
-			margin-top: 0px auto;
-		}
-
-
-		.item {
-			background-color: #f7d2d2;
-			box-shadow: 0px 2px 15px rgba(0,0,0,0.4);
-			border-radius: 4px;
-			padding: 20px;
-			margin: 0px 0px 10px;
-		}
-				
-		.sidenav {
-		height: 100%; 
-		width: 0; 
-		position: fixed; 
-		z-index: 1; 
-		top: 0; 
-		left: 0;
-		background-color: rgb(63, 60, 60); 
-		overflow-x: hidden; 
-		padding-top: 60px; 
-		transition: 0.5s; 
-		
-		}
-		.cursor{
-			cursor: pointer;
-		}
-
-		
-		.sidenav a {
-		padding: 8px 8px 8px 32px;
-		text-decoration: none;
-		font-size: 25px;
-		color: #818181;
-		display: block;
-		transition: 0.3s;
-		}
-
-		
-		.sidenav a:hover {
-		color: #f1f1f1;
-		}
-
-		
-		.sidenav .closebtn {
-		position: absolute;
-		top: 0;
-		right: 25px;
-		font-size: 36px;
-		margin-left: 50px;
-		}
-		.nav{
-			background-color: black;
-			padding: 2%;
-			
-		}
-		.container-header {
-		position: relative;
-		width: 100%;
-		height: 500px;
-		background-color: black;
-		
-		}
-
-		.image {
-		display: block;
-		width: 100%;
-		height: auto;
-		}
-
-		.overlay {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-color: rgb(240, 204, 137);
-		opacity: 20%;
-		overflow: hidden;
-		width: 100%;
-		height: 0;
-		transition: .5s ease;
-
-		}
-
-		.container-header:hover .overlay {
-		height: 100%;
-
-		}
-
-		.text {
-		color: white;
-		font-size: 20px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		text-align: center;
-		}
-		.c1{
-			background-image: url(images/exemplo.jpg);
-		}
-    </style>
-
-</head>
-<body> 
-	<nav class="nav">
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="#">Sobre</a>
-			<a href="#">Filmes</a>
-			<a href="#">Contato</a>
-		  </div>
-		  
-		  
-		  <span class="cursor" onclick="openNav()"> 
-			Menu
-		</span>
-	
-</nav>
-
-	<header data-parallax="scroll" data-image-src="images/">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-3">
-
-        <div class="container-header c1">
-			
-			<div class="overlay">
-			  <div class="text">Info</div>
+		<link rel="stylesheet" href="lib/animate/css/animate-3.7.2.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<nav class="nav">
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="#">Sobre</a>
+				<a href="#">Filmes</a>
+				<a href="#">Contato</a>
 			</div>
-		  </div>
-				</div>
-		 
-				<div class="col-sm-3">
-		  <div class="container-header c1">
-		
-			<div class="overlay">
-			  <div class="text">Info</div>
-			</div>
-		  </div>
-				</div>
 
-				<div class="col-sm-3">
-		 
-		  <div class="container-header c1">
-			
-			<div class="overlay">
-			  <div class="text">Info</div>
-			</div>
-		  </div>
-				</div>
+			<span class="cursor" onclick="openNav()">
+				Menu
+			</span>
+		</nav>
 
-				<div class="col-sm-3">
-		 
-		  <div class="container-header c1">
-			
-			<div class="overlay">
-			  <div class="text">Info</div>
-			</div>
-		  </div>
-		  </div>
-		  </div>
-		  </div>
-
-    </header>
-
-    <section id="secaoA">
-
-		<h1></h1>
-		<video autoplay loop muted>
-			<source src="video.mp4" type="video/mp4">
-		</video>
-
-        <div class="conteudo">
-            <h1>
-               Sobre
-            </h1>
-		 </div>
-
-
-    </section>
-
-    <section id="secaoB" class="wow fadeInLeft">
-
-        <div class="conteudo">
-			
+		<header data-parallax="scroll" data-image-src="images/">
 			<div class="container-fluid">
 				<div class="row">
-
-					<div class="col-sm-4">
-						<div class="item">
-							<h2>Um item</h2>
-							<p>Um texto</p>
+					<div class="col-sm-3">
+						<div class="container-header c1">
+							<div class="overlay">
+								<div class="info">
+									Info
+									<button class="btn btn-default btn-outline" type="button" onclick="mostrarInfo('#divInfo1')">Mais Info...</button>
+								</div>
+							</div>
 						</div>
 					</div>
 
-					<div class="col-sm-4">
-						<div class="item">
-							<h2>Um item</h2>
-							<p>Um texto</p>
+					<div class="col-sm-3">
+						<div class="container-header c1">
+							<div class="overlay">
+								<div class="info">
+									Info
+									<button class="btn btn-default btn-outline" type="button" onclick="mostrarInfo('#divInfo2')">Mais Info...</button>
+								</div>
+							</div>
 						</div>
 					</div>
 
-					<div class="col-sm-4">
-						<div class="item">
-							<h2>Um item</h2>
-							<p>Um texto</p>
+					<div class="col-sm-3">
+						<div class="container-header c1">
+							<div class="overlay">
+								<div class="info">
+									Info
+									<button class="btn btn-default btn-outline" type="button" onclick="mostrarInfo('#divInfo3')">Mais Info...</button>
+								</div>
+							</div>
 						</div>
 					</div>
 
-				</div>
-
-				<div class="row">
-
-					<div class="col-sm-4">
-						<div class="item">
-							<h2>Um item</h2>
-							<p>Um texto</p>
+					<div class="col-sm-3">
+						<div class="container-header c1">
+							<div class="overlay">
+								<div class="info">
+									Info
+									<button class="btn btn-default btn-outline" type="button" onclick="mostrarInfo('#divInfo4')">Mais Info...</button>
+								</div>
+							</div>
 						</div>
 					</div>
-
-					<div class="col-sm-4">
-						<div class="item">
-							<h2>Um item</h2>
-							<p>Um texto</p>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="item">
-							<h2>Um item</h2>
-							<p>Um texto</p>
-						</div>
-					</div>
-
 				</div>
 			</div>
+		</header>
 
-        </div>
+		<section id="divInfo1">
+			<p>abc</p>
+			<p>abc</p>
+			<p>abc</p>
+			<p>abc</p>
+			<p>abc</p>
+			<p>abc</p>
+		</section>
 
-    </section>
+		<section id="divInfo2" style="display: none;">
+			<p>def</p>
+			<p>def</p>
+			<p>def</p>
+			<p>def</p>
+			<p>def</p>
+			<p>def</p>
+		</section>
 
-    <footer>
-		<div class="footer">
-			<p>
-				Rodapé
-			</p>
-		</div>
-    </footer>
+		<section id="divInfo3" style="display: none;">
+			<p>ghi</p>
+			<p>ghi</p>
+			<p>ghi</p>
+			<p>ghi</p>
+			<p>ghi</p>
+			<p>ghi</p>
+		</section>
 
-    <script type="text/javascript" src="lib/jquery/jquery-1.0.0.min.js"></script>
-    <script type="text/javascript" src="lib/bootstrap/js/bootstrap-1.0.0.min.js"></script>
-    <script type="text/javascript" src="lib/bootstrap/js/bootstrap-1.0.0.min.js"></script>
-	<!--
-	Parallax jQuery
-	https://pixelcog.github.io/parallax.js/
-	-->
-    <script type="text/javascript" src="lib/parallax/js/parallax-1.5.0.min.js"></script>
-	<!--
-	wow.js
-	https://wowjs.uk/
-	
-	Mais opções e documentação: https://wowjs.uk/docs.html
-	-->
-	<script type="text/javascript" src="lib/wow/js/wow-1.3.0.min.js"></script>
-	<script type="text/javascript">
-		new WOW().init();
-	</script>
-	<script type="text/javascript">
+		<section id="divInfo4" style="display: none;">
+			<p>jkl</p>
+			<p>jkl</p>
+			<p>jkl</p>
+			<p>jkl</p>
+			<p>jkl</p>
+			<p>jkl</p>
+		</section>
+
+		<section id="secaoA">
+			<h1></h1>
+			<video autoplay loop muted>
+				<source src="video.mp4" type="video/mp4" />
+			</video>
+
+			<div class="conteudo">
+				<h1>
+					Sobre
+				</h1>
+			</div>
+		</section>
+
+		<section id="secaoB" class="wow fadeInLeft">
+			<div class="conteudo">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="item">
+								<h2>Um item</h2>
+								<p>Um texto</p>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="item">
+								<h2>Um item</h2>
+								<p>Um texto</p>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="item">
+								<h2>Um item</h2>
+								<p>Um texto</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="item">
+								<h2>Um item</h2>
+								<p>Um texto</p>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="item">
+								<h2>Um item</h2>
+								<p>Um texto</p>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="item">
+								<h2>Um item</h2>
+								<p>Um texto</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer">
+				<p>
+					Rodapé
+				</p>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="lib/jquery/jquery-1.0.0.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap/js/bootstrap-1.0.0.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap/js/bootstrap-1.0.0.min.js"></script>
+		<!--
+		Parallax jQuery
+		https://pixelcog.github.io/parallax.js/
+		-->
+		<script type="text/javascript" src="lib/parallax/js/parallax-1.5.0.min.js"></script>
+		<!--
+		wow.js
+		https://wowjs.uk/
+		
+		Mais opções e documentação: https://wowjs.uk/docs.html
+		-->
+		<script type="text/javascript" src="lib/wow/js/wow-1.3.0.min.js"></script>
+		<script type="text/javascript">
+			new WOW().init();
+
 			/* Set the width of the side navigation to 250px */
-		function openNav() {
-		document.getElementById("mySidenav").style.width = "250px";
-		}
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
 
-		/* Set the width of the side navigation to 0 */
-		function closeNav() {
-		document.getElementById("mySidenav").style.width = "0";
-		}
-	</script>
+			/* Set the width of the side navigation to 0 */
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
 
-</body>
+			var divAtual = "#divInfo1", estaFazendoFade = false;
+
+			function mostrarInfo(id) {
+				if (id == divAtual || estaFazendoFade) {
+					return;
+				}
+
+				estaFazendoFade = true;
+
+				function terminarFadeIn() {
+					estaFazendoFade = false;
+				}
+
+				function fazerFadeIn() {
+					divAtual = id;
+					$(divAtual).fadeIn(300, terminarFadeIn);
+				}
+
+				$(divAtual).fadeOut(300, fazerFadeIn);
+
+			}
+		</script>
+	</body>
 </html>
