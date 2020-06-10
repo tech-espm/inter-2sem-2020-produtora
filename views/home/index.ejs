@@ -14,6 +14,7 @@
 	-->
 		<link rel="stylesheet" href="lib/animate/css/animate-3.7.2.css" />
 		<link rel="stylesheet" href="/css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<nav class="nav">
@@ -37,7 +38,7 @@
 							The Aviator 
 							<div class="overlay">
 								<div class="info">
-									<p>DIRECTED BY<br>Martin Scorsese<br>WRITEN BY<br>Paul</p>
+									<p>DIRECTED BY<br>Martin Scorsese</p>
 									
 									<button class="btn btn-default btn-outline clickMe" type="button" onclick="mostrarInfo('#divInfo1')">Mais Info...</button>
 								</div>
@@ -83,13 +84,49 @@
 
 		<section id="divInfo1">
 			<p class="wow fadeInLeft">
-				<div class="col-sm-6">
-				<p class="desc">FOR SOME MEN, THE SKY WAS THE LIMIT. FOR HIM, IT WAS JUST THE BEGINNING.</p>
-				<p class="descsub">A biopic depicting the life of filmmaker and aviation pioneer Howard Hughes from 1927 to 1947, during which time he became a successful film producer and an aviation magnate, while simultaneously growing more unstable due to severe obsessive-compulsive disorder.</p>
+				<div class="row">
+					<div class="col-sm-6">
+						<p class="desc">FOR SOME MEN, THE SKY WAS THE LIMIT. FOR HIM, IT WAS JUST THE BEGINNING.</p>
+						<p class=" desc descsub">A biopic depicting the life of filmmaker and aviation pioneer Howard Hughes from 1927 to 1947, during which time he became a successful film producer and an aviation magnate, while simultaneously growing more unstable due to severe obsessive-compulsive disorder.</p>
+					</div>
+					<div class="col-sm-6">
+						<iframe width="98%" height="400px" style="padding-top: 10%;" src="https://www.youtube.com/embed/sE6duD25qSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 				</div>
-				<div class="col-sm-6">
-					<iframe width="700px" height="500px" style="padding-top: 30%;" src="https://www.youtube.com/embed/sE6duD25qSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="row" style="padding-top: 5%;">
+					<div class="col-sm-6 imagem">
+					</div>
+					<div class="col-sm-6">
+						<div class="col-sm-6">
+						<a class="fichatitle">
+							<p>Diretor</p>
+							<p>Elenco</p>
+							<p>Roteiro</p>
+							<p>Ano</p>
+						</a>
+						</div>
+						<div class="col-sm-6 ">
+							<a class="fichadesc">
+								<p>Martin Scorsese</p>
+								<p>Leonardo DiCaprio</p>
+								<p>Paul Schreadr</p>
+								<p>2004</p>
+							</a>
 
+						</div>
+					
+					</div>
+					<p>
+						<div class="dropdown">
+						<button onclick="drop()" class="dropbtn">Assistir</button>
+						<div id="myDropdown" class="dropdown-conteudo">
+						  <a href="https://br.hbogola.com/content/70747527-88d1-4a2d-872c-bda4cf5ffb87">HBO</a>
+						  <a href="https://itunes.apple.com/br/movie/o-aviador/id797505501?ign-mpt=uo%3D4">iTunes</a>
+						  <a href="https://play.google.com/store/movies/details/O_Aviador_LEG?gl=BR&hl=en&id=SVY4f5B9AWY">Google Play</a>
+						</div>
+					  </div></p>
+
+					</div>
 				</div>
 			</p>
 		</section>
@@ -122,11 +159,7 @@
 		</section>
 
 		<section id="secaoA">
-			<h1></h1>
-			<video autoplay loop muted>
-				<source src="aviat.mp4" type="video/mp4" />
-			</video>
-
+		
 			<div class="conteudo">
 				<h1>
 					Sobre
@@ -213,6 +246,9 @@
 				$(divAtual).fadeOut(300, fazerFadeIn);
 
 			}
+			function drop() {
+ 			 document.getElementById("myDropdown").classList.toggle("show");
+				}
 
 			
 	
