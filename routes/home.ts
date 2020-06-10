@@ -7,4 +7,8 @@ router.all("/", wrap(async (req: express.Request, res: express.Response) => {
 	res.render("home/index", { layout: "layout-vazio" });
 }));
 
+router.all("/contact", wrap(async (req: express.Request, res: express.Response) => {
+	res.render("home/contact", { layout: "layout-vazio" });
+}));
+
 export = router;
