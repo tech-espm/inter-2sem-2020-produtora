@@ -9,6 +9,8 @@ body {
 
 body {
 	background: white;
+	font-family: 'Montserrat', sans-serif;
+	color: black;
 }
 
 header {
@@ -142,7 +144,7 @@ footer {
 	transform: translate(-50%, -50%);
 	text-justify: auto;
 	color: white;
-	font-family: Helvetica, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -158,15 +160,16 @@ footer {
 	color: white;
 	padding-top: 98%;
 	padding-left: 2%;
-	font-family: Helvetica, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-shadow: -1px 0 rgb(82, 81, 81);
 
 }
 .desc{
 	font-size: large;
-	font-family: Helvetica, sans-serif;
-	padding-top: 30%;
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 10%;
 	font-weight: bold;
+	color: white;
 }
 .descsub{
 	font-size: medium;
@@ -176,5 +179,65 @@ footer {
 
 }
 #divInfo1{
-	background-color: #2a4547;
+	background-color: #223536;
 }
+.imagem{
+	background-image: url(https://pbs.twimg.com/media/Dhg4BEmVAAA6BSl.jpg);
+	padding-top: 70%;
+	width:"700px";
+	 height:"500px";
+	 background-repeat: no-repeat;
+}
+.fichatitle{
+	font-size: large;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 50%;
+	font-weight: bold;
+	color: white;
+	
+}
+.fichadesc{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	padding-top: 50%;
+
+	
+}
+
+.dropbtn {
+	background-color: rgb(28, 82, 117);
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+	padding-top: 10%;
+	padding-left: 2%;
+  }
+  
+  .dropdown-conteudo {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-conteudo  a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
