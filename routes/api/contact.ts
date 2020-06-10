@@ -8,7 +8,7 @@ const router = express.Router();
 // dentro da função async não serão tratadas!!!
 router.post("/send", wrap(async (req: express.Request, res: express.Response) => {
 	debugger;
-	const output = `<p>Hello,</p>
+	const output = `<p>Olá,</p>
     <p>Novo contato</p>
     <h3>Informações de contato</h3>
     <ul>  
@@ -20,10 +20,7 @@ router.post("/send", wrap(async (req: express.Request, res: express.Response) =>
     <p>${req.body.text}</p>`;
 
 	let transporter = nodemailer.createTransport({
-		service: "gmail",
-		host: "smtp.gmail.com",
-		port: 465,
-		secure: "true",
+		service: "outlook",
 		auth: {
 			user: process.env.EMAIL,
 			pass: process.env.PASSWORD
@@ -34,7 +31,7 @@ router.post("/send", wrap(async (req: express.Request, res: express.Response) =>
 	});
 
 	let mailOptions = {
-		from: "caroline.ferguson86@gmail.com",
+		from: "projetowebprod@outlook.com",
 		to: "carlosrafaelgn@hotmail.com",
 		subject: "Testing",
 		text: "Olá",
