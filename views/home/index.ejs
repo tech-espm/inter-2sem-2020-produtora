@@ -7,23 +7,23 @@
 
 		<title>Produtora</title>
 
-		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-1.0.22.min.css" />
-		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap-1.0.22.min.css" />
+		<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome-1.0.2.min.css" />
 		<!--
-	Animate.css
-	https://daneden.github.io/animate.css/
-	-->
-		<link rel="stylesheet" href="lib/animate/css/animate-3.7.2.css" />
+		Animate.css
+		https://daneden.github.io/animate.css/
+		-->
+		<link rel="stylesheet" href="/lib/animate/css/animate-3.7.2.css" />
 		<link rel="stylesheet" href="/css/style.css" />
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<nav class="nav">
 			<div id="mySidenav" class="sidenav">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="#">Sobre</a>
+				<a href="#secaoA">Sobre</a>
 				<a href="#">Filmes</a>
-				<a href="home\contact.ejs">Contato</a>
+				<a href="/contact">Contato</a>
 			</div>
 
 			<span class="cursor" onclick="openNav()">
@@ -32,7 +32,7 @@
 			</span>
 		</nav>
 
-		<header data-parallax="scroll" data-image-src="images/">
+		<header>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-3">
@@ -83,52 +83,50 @@
 		</header>
 
 		<section id="divInfo1">
-			<p class="wow fadeInLeft">
-				<div class="row">
-					<div class="col-sm-6">
-						<p class="desc">FOR SOME MEN, THE SKY WAS THE LIMIT. FOR HIM, IT WAS JUST THE BEGINNING.</p>
-						<p class=" desc descsub">A biopic depicting the life of filmmaker and aviation pioneer Howard Hughes from 1927 to 1947, during which time he became a successful film producer and an aviation magnate, while simultaneously growing more unstable due to severe obsessive-compulsive disorder.</p>
-					</div>
-					<div class="col-sm-6">
-						<iframe width="98%" height="400px" style="padding-top: 10%;" src="https://www.youtube.com/embed/sE6duD25qSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-				<div class="row" style="padding-top: 5%;">
-					<div class="col-sm-6 imagem">
-					</div>
-					<div class="col-sm-6">
+			<div class="wow fadeInLeft">
+				<div class="container-fluid">
+					<div class="row">
 						<div class="col-sm-6">
-						<a class="fichatitle">
-							<p>Diretor</p>
-							<p>Elenco</p>
-							<p>Roteiro</p>
-							<p>Ano</p>
-						</a>
+							<p class="desc">FOR SOME MEN, THE SKY WAS THE LIMIT. FOR HIM, IT WAS JUST THE BEGINNING.</p>
+							<p class=" desc descsub">A biopic depicting the life of filmmaker and aviation pioneer Howard Hughes from 1927 to 1947, during which time he became a successful film producer and an aviation magnate, while simultaneously growing more unstable due to severe obsessive-compulsive disorder.</p>
 						</div>
-						<div class="col-sm-6 ">
+						<div class="col-sm-6">
+							<iframe width="98%" height="400px" style="padding-top: 10%;" src="https://www.youtube.com/embed/sE6duD25qSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="row" style="padding-top: 5%;">
+						<div class="col-sm-6 imagem">
+						</div>
+						<div class="col-sm-3">
+							<a class="fichatitle">
+								<p>Diretor</p>
+								<p>Elenco</p>
+								<p>Roteiro</p>
+								<p>Ano</p>
+							</a>
+						</div>
+						<div class="col-sm-3">
 							<a class="fichadesc">
 								<p>Martin Scorsese</p>
 								<p>Leonardo DiCaprio</p>
 								<p>Paul Schreadr</p>
 								<p>2004</p>
 							</a>
-
 						</div>
-					
-					</div>
-					<p>
-						<div class="dropdown">
-						<button onclick="drop()" class="dropbtn">Assistir</button>
-						<div id="myDropdown" class="dropdown-conteudo">
-						  <a href="https://br.hbogola.com/content/70747527-88d1-4a2d-872c-bda4cf5ffb87">HBO</a>
-						  <a href="https://itunes.apple.com/br/movie/o-aviador/id797505501?ign-mpt=uo%3D4">iTunes</a>
-						  <a href="https://play.google.com/store/movies/details/O_Aviador_LEG?gl=BR&hl=en&id=SVY4f5B9AWY">Google Play</a>
-						</div>
-					  </div></p>
+						<p>
+							<div class="dropdown">
+								<button onclick="drop()" class="dropbtn">Assistir</button>
+								<div id="myDropdown" class="dropdown-conteudo">
+									<a href="https://br.hbogola.com/content/70747527-88d1-4a2d-872c-bda4cf5ffb87">HBO</a>
+									<a href="https://itunes.apple.com/br/movie/o-aviador/id797505501?ign-mpt=uo%3D4">iTunes</a>
+									<a href="https://play.google.com/store/movies/details/O_Aviador_LEG?gl=BR&hl=en&id=SVY4f5B9AWY">Google Play</a>
+								</div>
+							</div>
+						</p>
 
 					</div>
 				</div>
-			</p>
+			</div>
 		</section>
 
 		<section id="divInfo2" style="display: none;">
@@ -197,21 +195,20 @@
 			</div>
 		</footer>
 
-		<script type="text/javascript" src="lib/jquery/jquery-1.0.0.min.js"></script>
-		<script type="text/javascript" src="lib/bootstrap/js/bootstrap-1.0.0.min.js"></script>
-		<script type="text/javascript" src="lib/bootstrap/js/bootstrap-1.0.0.min.js"></script>
+		<script type="text/javascript" src="/lib/jquery/jquery-1.0.0.min.js"></script>
+		<script type="text/javascript" src="/lib/bootstrap/js/bootstrap-1.0.0.min.js"></script>
 		<!--
 		Parallax jQuery
 		https://pixelcog.github.io/parallax.js/
 		-->
-		<script type="text/javascript" src="lib/parallax/js/parallax-1.5.0.min.js"></script>
+		<script type="text/javascript" src="/lib/parallax/js/parallax-1.5.0.min.js"></script>
 		<!--
 		wow.js
 		https://wowjs.uk/
 		
 		Mais opções e documentação: https://wowjs.uk/docs.html
 		-->
-		<script type="text/javascript" src="lib/wow/js/wow-1.3.0.min.js"></script>
+		<script type="text/javascript" src="/lib/wow/js/wow-1.3.0.min.js"></script>
 		<script type="text/javascript">
 			new WOW().init();
 
@@ -247,12 +244,8 @@
 
 			}
 			function drop() {
- 			 document.getElementById("myDropdown").classList.toggle("show");
-				}
-
-			
-	
-			
+ 				document.getElementById("myDropdown").classList.toggle("show");
+			}
 		</script>
 	</body>
 </html>

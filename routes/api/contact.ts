@@ -7,20 +7,17 @@ const router = express.Router();
 // Se utilizar router.xxx() mas não utilizar o wrap(), as exceções ocorridas
 // dentro da função async não serão tratadas!!!
 router.post("/send", wrap(async (req: express.Request, res: express.Response) => {
-	debugger;
-	const output = `<p>Olá,</p>
-    <p>Novo contato</p>
-    <h3>Informações de contato</h3>
-    <ul>  
-        <li>Nome: ${req.body.name}</li>
-        <li>Email: ${req.body.email}</li>
-        <li>Assunto: ${req.body.subject}</li>
-    </ul>
-    <h3>Mensagem:</h3>
-    <p>${req.body.text}</p>`;
+	const output = `Olá,
+    Novo contato
+    Informações de contato
+    - Nome: ${req.body.name}
+    - Email: ${req.body.email}
+    - Assunto: ${req.body.subject}
+    Mensagem:
+    ${req.body.text}`;
 
 	let transporter = nodemailer.createTransport({
-		service: "outlook",
+		service: "Hotmail",
 		auth: {
 			user: process.env.EMAIL,
 			pass: process.env.PASSWORD
@@ -31,11 +28,10 @@ router.post("/send", wrap(async (req: express.Request, res: express.Response) =>
 	});
 
 	let mailOptions = {
-		from: "projetowebprod@outlook.com",
-		to: "carlosrafaelgn@hotmail.com",
-		subject: "Testing",
-		text: "Olá",
-		html: output
+		from: process.env.EMAIL,
+		to: process.env.EMAIL,
+		subject: "Contato do site",
+		text: output
 	};
 
 	transporter.sendMail(mailOptions, (error, info) => {
