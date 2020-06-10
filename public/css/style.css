@@ -103,6 +103,7 @@ footer {
 .nav {
 	background-color: black;
 	padding: 2%;
+	color: white;
 }
 .container-header {
 	position: relative;
@@ -156,12 +157,11 @@ footer {
 }
 
 .texto { text-align: left;
-	font-size: 80px;
+	font-size: 50px;
 	color: white;
-	padding-top: 98%;
+	padding-top: 40%;
 	padding-left: 2%;
 	font-family: 'Montserrat', sans-serif;
-	text-shadow: -1px 0 rgb(82, 81, 81);
 
 }
 .desc{
@@ -237,7 +237,9 @@ footer {
 	display: block;
   }
   
-  .dropdown a:hover {background-color: #ddd;}
+  .dropdown a:hover {
+	  background-color: #ddd;
+	}
   
   .show {display: block;}
 
