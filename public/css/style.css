@@ -75,6 +75,7 @@ footer {
 	overflow-x: hidden;
 	padding-top: 60px;
 	transition: 0.5s;
+	
 }
 .cursor {
 	cursor: pointer;
@@ -104,12 +105,16 @@ footer {
 	background-color: black;
 	padding: 2%;
 	color: white;
+	/*position: fixed; 
+	top: 0; 
+	width:100%; */
 }
 .container-header {
 	position: relative;
 	width: 100%;
 	height: 500px;
 	background-color: black;
+	/*margin-top: 40px;*/
 }
 
 .image {
@@ -155,6 +160,24 @@ footer {
 	background-position: top center;
 
 }
+.c2 {
+	background-image: url('/images/mdmx1.jpg');
+	background-size: cover;
+	background-position: top center;
+
+}
+.c3 {
+	background-image: url('/images/inc.jpg');
+	background-size: cover;
+	background-position: top center;
+
+}
+.c4{
+	background-image: url('/images/sonic1.jpg');
+	background-size: cover;
+	background-position: top center;
+
+}
 
 .texto { text-align: left;
 	font-size: 50px;
@@ -181,13 +204,44 @@ footer {
 #divInfo1{
 	background-color: #223536;
 }
-.imagem{
-	background-image: url(https://pbs.twimg.com/media/Dhg4BEmVAAA6BSl.jpg);
-	padding-top: 70%;
-	width:"700px";
-	 height:"500px";
-	 background-repeat: no-repeat;
+#divInfo2{
+	background-color: #816509;
 }
+#divInfo3{
+	background-color: #535d73;
+}
+#divInfo4{
+	background-color: rgb(8, 8, 100);
+}
+.imagem{
+	background-image: url('/images/aviat1.jpg');
+	padding-top: 30%;
+	background-repeat: no-repeat;
+	text-align: left;
+
+}
+.imagem2{
+	background-image: url('/images/mdmx2jpg.jpg');
+	padding-top: 30%;
+	background-repeat: no-repeat;
+	text-align: left;
+
+}
+.imagem3{
+	background-image: url('/images/inc1jpg.jpg');
+	padding-top: 30%;
+	background-repeat: no-repeat;
+	text-align: left;
+
+}
+.imagem4{
+	background-image: url('/images/son2.jpg');
+	padding-top: 30%;
+	background-repeat: no-repeat;
+	text-align: left;
+
+}
+
 .fichatitle{
 	font-size: large;
 	font-family: 'Montserrat', sans-serif;
@@ -200,8 +254,7 @@ footer {
 	font-family: 'Montserrat', sans-serif;
 	color: white;
 	padding-top: 50%;
-
-	
+	font-size:15px;
 }
 
 .dropbtn {
@@ -216,8 +269,9 @@ footer {
   .dropdown {
 	position: relative;
 	display: inline-block;
-	padding-top: 10%;
-	padding-left: 2%;
+	padding-top: 5%;
+	padding-left: 45%;
+	padding-bottom: 5%;
   }
   
   .dropdown-conteudo {
@@ -242,4 +296,35 @@ footer {
 	}
   
   .show {display: block;}
+
+  #form{
+	  text-align: left;
+	  padding-left: 10%;
+	  padding-top: 5%;
+	  padding-bottom: 5%;
+  }
+  .input{
+		width: 60%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+	  }
+ .submit{
+			background-color: #000000; 
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			transition-duration: 0.4s;
+		  }
+ .submit:hover{
+			 background-color: rgb(92, 92, 92);
+		 } 
+	.btndrop{
+		text-align: center;
+	}
+  
 
