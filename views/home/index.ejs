@@ -22,17 +22,17 @@
 			<div id="mySidenav" class="sidenav">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<a href="#secaoA">Sobre</a>
-				<a href="#">Filmes</a>
-				<a href="/contact">Contato</a>
+				<a href="#Filmes">Filmes</a>
+				<a href="#contact">Contato</a>
 			</div>
 
 			<span class="cursor" onclick="openNav()">
 				<i class="fa fa-bars"></i>
-				Menu
 			</span>
 		</nav>
 
 		<header>
+			<section id="Filmes">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-3">
@@ -40,28 +40,27 @@
 							<div class="overlay">
 								<div class="info texto">
 									O Aviador
-									<button class="btn btn-default btn-outline clickMe" type="button" onclick="mostrarInfo('#divInfo1')">Mais Info...</button>
+									<button class="btn btn-default btn-outline clickMe" type="button" onclick="mostrarInfo('#divInfo1')" href="#divInfo1">Mais Info...</button>
 								</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-sm-3">
-						<div class="container-header">
+						<div class="container-header c2">
 							<div class="overlay">
 								<div class="info">
-									Info
+									Mad Max
 									<button class="btn btn-default btn-outline" type="button" onclick="mostrarInfo('#divInfo2')">Mais Info...</button>
 								</div>
 							</div>
 						</div>
 					</div>
-
 					<div class="col-sm-3">
-						<div class="container-header ">
+						<div class="container-header c3 ">
 							<div class="overlay">
 								<div class="info">
-									INFO
+									A Origem
 									<button class="btn btn-default btn-outline" type="button" onclick="mostrarInfo('#divInfo3')">Mais Info...</button>
 								</div>
 							</div>
@@ -69,10 +68,10 @@
 					</div>
 
 					<div class="col-sm-3">
-						<div class="container-header ">
+						<div class="container-header c4 ">
 							<div class="overlay">
 								<div class="info">
-									Info
+									Sonic
 									<button class="btn btn-default btn-outline" type="button" onclick="mostrarInfo('#divInfo4')">Mais Info...</button>
 								</div>
 							</div>
@@ -80,6 +79,7 @@
 					</div>
 				</div>
 			</div>
+			</section>
 		</header>
 
 		<section id="divInfo1">
@@ -91,7 +91,7 @@
 							<p class=" desc descsub">A biopic depicting the life of filmmaker and aviation pioneer Howard Hughes from 1927 to 1947, during which time he became a successful film producer and an aviation magnate, while simultaneously growing more unstable due to severe obsessive-compulsive disorder.</p>
 						</div>
 						<div class="col-sm-6">
-							<iframe width="98%" height="400px" style="padding-top: 10%;" src="https://www.youtube.com/embed/sE6duD25qSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="98%" height="400px" style="padding-top: 10%;" src="https://www.youtube.com/embed/sE6duD25qSU?autoplay=1&mute=1&loop=1 " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 					</div>
 					<div class="row" style="padding-top: 5%;">
@@ -103,57 +103,189 @@
 								<p>Elenco</p>
 								<p>Roteiro</p>
 								<p>Ano</p>
+								<p>Duração</p>
+								<p>Genero</p>
 							</a>
 						</div>
 						<div class="col-sm-3">
 							<a class="fichadesc">
 								<p>Martin Scorsese</p>
-								<p>Leonardo DiCaprio</p>
-								<p>Paul Schreadr</p>
+								<p>Leonardo DiCaprio, Cate Blanchett, Alec Baldwin, Jude Law, John C. Reilly</p>
+								<p>John Logan</p>
 								<p>2004</p>
+								<p>170min</p>
+								<p>Drama</p>
 							</a>
 						</div>
-						<p>
-							<div class="dropdown">
-								<button onclick="drop()" class="dropbtn">Assistir</button>
-								<div id="myDropdown" class="dropdown-conteudo">
-									<a href="https://br.hbogola.com/content/70747527-88d1-4a2d-872c-bda4cf5ffb87">HBO</a>
-									<a href="https://itunes.apple.com/br/movie/o-aviador/id797505501?ign-mpt=uo%3D4">iTunes</a>
-									<a href="https://play.google.com/store/movies/details/O_Aviador_LEG?gl=BR&hl=en&id=SVY4f5B9AWY">Google Play</a>
-								</div>
+					</div>
+					<div class="row">
+					<p >
+						<div class="dropdown" >
+							<button onclick="drop()" class="dropbtn">Assistir</button>
+							<div id="myDropdown" class="dropdown-conteudo">
+								<a href="https://br.hbogola.com/content/70747527-88d1-4a2d-872c-bda4cf5ffb87">HBO</a>
+								<a href="https://itunes.apple.com/br/movie/o-aviador/id797505501?ign-mpt=uo%3D4">iTunes</a>
+								<a href="https://play.google.com/store/movies/details/O_Aviador_LEG?gl=BR&hl=en&id=SVY4f5B9AWY">Google Play</a>
 							</div>
-						</p>
-
+						</div>
+					</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<section id="divInfo2" style="display: none;">
-			<p>def</p>
-			<p>def</p>
-			<p>def</p>
-			<p>def</p>
-			<p>def</p>
-			<p>def</p>
+			<div class="wow fadeInLeft">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<p class="desc">THE MAXIMUM FORCE OF THE FUTURE</p>
+							<p class=" desc descsub">An apocalyptic story set in the furthest reaches of our planet, in a stark desert landscape where humanity is broken, and most everyone is crazed fighting for the necessities of life. Within this world exist two rebels on the run who just might be able to restore order.</p>
+						</div>
+						<div class="col-sm-6">
+							<iframe width="98%" height="400px" style="padding-top: 10%;" src="https://www.youtube.com/embed/hEJnMQG9ev8?autoplay=1;mute=1;loop=1 " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="row" style="padding-top: 5%;">
+						<div class="col-sm-6 imagem2">
+						</div>
+						<div class="col-sm-3">
+							<a class="fichatitle">
+								<p>Diretor</p>
+								<p>Elenco</p>
+								<p>Roteiro</p>
+								<p>Ano</p>
+								<p>Duração</p>
+								<p>Genero</p>
+							</a>
+						</div>
+						<div class="col-sm-3">
+							<a class="fichadesc">
+								<p>George Miller</p>
+								<p>Tom Hardy, Charlize Theron, Nicholas Hoult, Zoe Kravitz, John Walton</p>
+								<p>Brendan McCarthy</p>
+								<p>2015</p>
+								<p>120min</p>
+								<p>Ação</p>
+							</a>
+						</div>
+					</div>
+					<div class="row">
+					<p >
+						<div class="dropdown" >
+							<button onclick="dropmd()" class="dropbtn" style="background-color: gray;">Assistir</button>
+							<div id="mdmx" class="dropdown-conteudo">
+								<a href="https://itunes.apple.com/br/movie/mad-max-4-fury-road/id990549112?l=en">iTunes</a>
+								<a href="https://play.google.com/store/movies/details/Mad_Max_Estrada_Da_F%C3%BAria_LEG?gl=BR&hl=en&id=5scW57H25iw">Google Play</a>
+							</div>
+						</div>
+					</p>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="divInfo3" style="display: none;">
-			<p>ghi</p>
-			<p>ghi</p>
-			<p>ghi</p>
-			<p>ghi</p>
-			<p>ghi</p>
-			<p>ghi</p>
+			<div class="wow fadeInLeft">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<p class="desc">YOUR MIND IS THE SCENE OF THE CRIME.</p>
+							<p class=" desc descsub">Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: “inception”, the implantation of another person’s idea into a target’s subconscious.</p>
+						</div>
+						<div class="col-sm-6">
+							<iframe width="98%" height="400px" style="padding-top: 10%;" src="https://www.youtube.com/embed/YoHD9XEInc0?autoplay=1&mute=1&loop=1 " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="row" style="padding-top: 5%;">
+						<div class="col-sm-6 imagem3">
+						</div>
+						<div class="col-sm-3">
+							<a class="fichatitle">
+								<p>Diretor</p>
+								<p>Elenco</p>
+								<p>Roteiro</p>
+								<p>Ano</p>
+								<p>Duração</p>
+								<p>Genero</p>
+							</a>
+						</div>
+						<div class="col-sm-3">
+							<a class="fichadesc">
+								<p>Christopher Nolan</p>
+								<p>Leonardo DiCaprio, Tom Hardy, Ellen Page, Joseph Gordon-Levitt, Cillian Murphy</p>
+								<p>Christopher Nolan</p>
+								<p>2010</p>
+								<p>148min</p>
+								<p>Ficção Cientifica</p>
+							</a>
+						</div>
+					</div>
+					<div class="row">
+					<p >
+						<div class="dropdown" >
+							<button onclick="dropin()" class="dropbtn" style="background-color: gray;">Assistir</button>
+							<div id="inc" class="dropdown-conteudo">
+								<a href="https://www.netflix.com/title/70131314">Netflix</a>
+								<a href="https://itunes.apple.com/br/movie/a-origem-legendado/id460693908?l=en">iTunes</a>
+								<a href="https://play.google.com/store/movies/details/A_Origem_LEG?gl=BR&hl=en&id=bRywrZaOFEg">Google Play</a>
+							</div>
+						</div>
+					</p>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="divInfo4" style="display: none;">
-			<p>jkl</p>
-			<p>jkl</p>
-			<p>jkl</p>
-			<p>jkl</p>
-			<p>jkl</p>
-			<p>jkl</p>
+			<div class="wow fadeInLeft">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<p class="desc">A WHOLE NEW SPEED OF HERO</p>
+							<p class=" desc descsub">Based on the global blockbuster videogame franchise from Sega, Sonic the Hedgehog tells the story of the world’s speediest hedgehog as he embraces his new home on Earth. In this live-action adventure comedy, Sonic and his new best friend team up to defend the planet from the evil genius Dr. Robotnik and his plans for world domination.</p>
+						</div>
+						<div class="col-sm-6">
+							<iframe width="98%" height="400px" style="padding-top: 10%;" src="https://www.youtube.com/embed/szby7ZHLnkA?autoplay=1&mute=1&loop=1 " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="row" style="padding-top: 5%;">
+						<div class="col-sm-6 imagem4">
+						</div>
+						<div class="col-sm-3">
+							<a class="fichatitle">
+								<p>Diretor</p>
+								<p>Elenco</p>
+								<p>Roteiro</p>
+								<p>Ano</p>
+								<p>Duração</p>
+								<p>Genero</p>
+							</a>
+						</div>
+						<div class="col-sm-3">
+							<a class="fichadesc">
+								<p>Jeff Fowler</p>
+								<p>James Marsden, Tika Sumpter, Jim Carrey, Ben Schwartz</p>
+								<p>Pat Casey, Josh Miller</p>
+								<p>2020</p>
+								<p>98min</p>
+								<p>Comédia</p>
+							</a>
+						</div>
+					</div>
+					<div class="row">
+					<p >
+						<div class="dropdown" >
+							<button onclick="drops()" class="dropbtn" style="background-color:rgb(172, 172, 148);">Assistir</button>
+							<div id="son" class="dropdown-conteudo">
+								<a href="https://itunes.apple.com/br/movie/sonic-the-hedgehog/id1496058187?l=en">iTunes</a>
+								<a href="https://play.google.com/store/movies/details?id=q19uqNZ0CMA.P">Google Play</a>
+							</div>
+						</div>
+					</p>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="secaoA">
@@ -186,6 +318,21 @@
 				</div>
 			</div>
 		</section>
+		<section id="contact">
+			<div class="conteudo">
+				<h1>
+					Contato
+				</h1>
+			</div>
+			<form method="POST" id="form">
+				<p>Nome:</p><p><input type="name" name="name" class="input"></p>
+				<p>Email:</p><p><input type="email" name="email"  class="input"></p>
+				<p>Assunto:</p><p><input type="subject" name="subject"  class="input"></p>
+				<p>Mensagem:</p><p><textarea name="text" id="text" cols="30" rows="10" class="input"></textarea></p>
+				<p><input type="submit" value="Enviar" class="submit"></p>
+		   </form>
+
+		</section>
 
 		<footer>
 			<div class="footer">
@@ -197,6 +344,8 @@
 
 		<script type="text/javascript" src="/lib/jquery/jquery-1.0.0.min.js"></script>
 		<script type="text/javascript" src="/lib/bootstrap/js/bootstrap-1.0.0.min.js"></script>
+		<script type="text/javascript" src="/lib/jquery-validate/js/jquery-validate-1.0.0.min.js"></script>
+		<script type="text/javascript" src="/lib/jquery-validate/js/messages_pt_BR.min.js"></script>
 		<!--
 		Parallax jQuery
 		https://pixelcog.github.io/parallax.js/
@@ -246,6 +395,52 @@
 			function drop() {
  				document.getElementById("myDropdown").classList.toggle("show");
 			}
+			function dropmd(){
+				document.getElementById("mdmx").classList.toggle("show");
+			}
+			function dropin(){
+				document.getElementById("inc").classList.toggle("show");
+			}
+			function drops(){
+				document.getElementById("son").classList.toggle("show");
+			}
+
+			$("#form").validate({
+                rules: {
+                    name: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    subject: {
+                        required: true
+                    },
+                    text: {
+                        required: true
+                    }
+                },
+                submitHandler: function (form) {
+                    $.ajax({
+                        url: "/api/contact/send",
+                        method: "POST",
+                        data: $(form).serialize(),
+                        success: function (data) {
+                            if (data === true) {
+                                alert("Enviado com sucesso!");
+                            } else {
+                                alert("Erro: " + data);
+                            }
+                        },
+                        error: function () {
+                            alert("Algo deu errado :(");
+
+                        }
+                    });
+                }
+            });
+		
 		</script>
 	</body>
 </html>
