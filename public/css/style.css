@@ -31,10 +31,11 @@ background-size: cover;*/
 
 #secaoB {
 	padding: 150px 0px 100px;
-	background-color: #3c455c;
+	background-color: #000000;
 	background-position: top left;
 	background-repeat: no-repeat;
 	background-size: 100%;
+	color: white;
 }
 
 footer {
@@ -155,25 +156,25 @@ footer {
 }
 
 .c1 {
-	background-image: url('/images/aviat8.jpg');
+	background-image: url('/images/aviatposter.jpg');
 	background-size: cover;
 	background-position: top center;
 
 }
 .c2 {
-	background-image: url('/images/mdmx1.jpg');
+	background-image: url('/images/mdmxposter.jpg');
 	background-size: cover;
 	background-position: top center;
 
 }
 .c3 {
-	background-image: url('/images/inc.jpg');
+	background-image: url('/images/incposter.jpg');
 	background-size: cover;
 	background-position: top center;
 
 }
 .c4{
-	background-image: url('/images/sonic1.jpg');
+	background-image: url('/images/sonposter.png');
 	background-size: cover;
 	background-position: top center;
 
@@ -214,28 +215,28 @@ footer {
 	background-color: rgb(8, 8, 100);
 }
 .imagem{
-	background-image: url('/images/aviat1.jpg');
+	background-image: url('/images/aviador.jpg');
 	padding-top: 30%;
 	background-repeat: no-repeat;
 	text-align: left;
 
 }
 .imagem2{
-	background-image: url('/images/mdmx2jpg.jpg');
+	background-image: url('/images/madmax.jpg');
 	padding-top: 30%;
 	background-repeat: no-repeat;
 	text-align: left;
 
 }
 .imagem3{
-	background-image: url('/images/inc1jpg.jpg');
+	background-image: url('/images/inception.jpg');
 	padding-top: 30%;
 	background-repeat: no-repeat;
 	text-align: left;
 
 }
 .imagem4{
-	background-image: url('/images/son2.jpg');
+	background-image: url('/images/sonic.jpg');
 	padding-top: 30%;
 	background-repeat: no-repeat;
 	text-align: left;
